@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(License) {
   if (License !== 'None') {
-    return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+    return `![GitHub license](https://img.shields.io/badge/license-${License}-blue.svg)`;
   }
   let badge = '';
   if (License = 'MIT') {
@@ -25,37 +25,43 @@ function renderLicenseBadge(License) {
  
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-// function renderLicenseLink(license) {}
-//   if (license) {
-//     return ''
-//   }
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
  
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
 
-  # Title of README: ${data.Title}
-  # Name: ${data.Name} 
+  # Title of README: 
+  ${data.Title} ${renderLicenseBadge(data.License)}
+  # Name: 
+  ${data.Name} 
 
-  ## Table of Contents: ${data.Contents}
-  ## Description of Project: ${data.Description}
-  ## Installation Instructions: ${data.Installation}
-  ## Usage: ${data.Usage}
-  ## License: ${data.License}
-  ## Contributors: ${data.Title} was proudly made by ${data.Contributors}
-  ## Tests: ${data.Tests}
+  ## Table of Contents: 
+  ${data.Contents}
+
+  ## Description of Project: 
+  ${data.Description}
+
+  ## Installation Instructions: 
+  ${data.Installation}
+
+  ## Usage: 
+  ${data.Usage}
+
+  ## License: 
+  ${renderLicenseBadge(data.License)}
+
+  ## Contributing: 
+  ${data.Title} was proudly made by ${data.Contributing}
+
+  ## Tests: 
+  ${data.Tests}
 
 
   ## Questions: 
   For any questions or feedback, please email me at: 
   * ${data.Email} 
   Check out my Github at: 
-  * (https://github.com/${data.Github})
+  * https://github.com/${data.Github}
 
                 
 `;

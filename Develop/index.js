@@ -75,8 +75,8 @@ const promptUser =  [
         },
         {
           type: 'input',
-          name: 'Contributors',
-          message: 'Who are the contributors of this project?'
+          name: 'Contributing',
+          message: 'What are the contributing guidelines?'
         },
         {
           type: 'input',
