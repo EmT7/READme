@@ -1,0 +1,22 @@
+{
+  "name": "readme",
+  "version": "1.0.0",
+  "description": "README generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "Test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MirandaT77/READme.git"
+  },
+  "author": "MirandaT77",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MirandaT77/READme/issues"
+  },
+  "homepage": "https://github.com/MirandaT77/READme#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
